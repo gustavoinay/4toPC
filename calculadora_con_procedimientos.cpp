@@ -1,8 +1,8 @@
-// calculadora_con_procedimientos.cpp: define el punto de entrada de la aplicación de consola.
+// calculadora_con_procedimientos.cpp: define el punto de entrada de la aplicaciÃ³n de consola.
 //
 /*
 	Programador: Marvin Ajvatz
-	Descripción: Calculadora con procedimientos
+	DescripciÃ³n: Calculadora con procedimientos
 */
 #include "stdafx.h"
 #include "iostream"
@@ -10,6 +10,7 @@
 using namespace std;
 
 void sumar();
+void restar();
 int main()
 {
 	int opcion = 0;
@@ -35,6 +36,7 @@ int main()
 		case 1: system("cls"); sumar(); system("cls"); break;
 			break;
 		}
+		case 2: system("cls"); restar(); system("cls"); break;
 
 	}
 	return 0;
@@ -52,5 +54,20 @@ void sumar() {
 	cout << "El resultado de la suma es: "<<resultado;
 	cout << "\n";
 	system("pause");
+
+}
+void restar() {
+	int numero1, numero2, resultado;
+	cout << "Ingrese cantidad1: ";
+	cin >> numero1;
+	cout << "\n";
+	cout << "Ingrese cantidad2: ";
+	cin >> numero2;
+	resultado = numero1 - numero2;
+	cout << "\n";
+	cout << "El resultado de la resta es: "<<resultado;
+	cout << "\n";
+	system("pause");
+	system("cls");
 
 }
